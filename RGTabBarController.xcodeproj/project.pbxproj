@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB349AA1DE968D300877B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB349A91DE968D300877B0E /* AppDelegate.swift */; };
+		3DB349B11DE968D300877B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB349B01DE968D300877B0E /* Assets.xcassets */; };
+		3DB349B41DE968D300877B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB349B21DE968D300877B0E /* LaunchScreen.storyboard */; };
+		3DB349BD1DE96B0400877B0E /* RGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB349BC1DE96B0400877B0E /* RGTabBarController.swift */; };
+		3DB7BB161DEA052600F73EBC /* RGTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7BB151DEA052600F73EBC /* RGTabBarController.xib */; };
+		68D945956EF2084E037EA0C8 /* Pods_RGTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01666C8554DBD2858CABC4 /* Pods_RGTabBarController.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DB349A61DE968D300877B0E /* RGTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB349A91DE968D300877B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DB349B01DE968D300877B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB349B31DE968D300877B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DB349B51DE968D300877B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB349BC1DE96B0400877B0E /* RGTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGTabBarController.swift; sourceTree = "<group>"; };
+		3DB7BB151DEA052600F73EBC /* RGTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGTabBarController.xib; sourceTree = "<group>"; };
+		4C01666C8554DBD2858CABC4 /* Pods_RGTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EE6D33CE1B08550B6D8BA6 /* Pods-RGTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTabBarController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGTabBarController/Pods-RGTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
+		83D709E3B3C81BC29EEDCC58 /* Pods-RGTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTabBarController.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGTabBarController/Pods-RGTabBarController.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB349A31DE968D300877B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D945956EF2084E037EA0C8 /* Pods_RGTabBarController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB3499D1DE968D300877B0E = {
+			isa = PBXGroup;
+			children = (
+				3DB349A71DE968D300877B0E /* Products */,
+				3DB349A81DE968D300877B0E /* RGTabBarController */,
+				3DB349BB1DE96AB800877B0E /* Source */,
+				7D12843F6D9AA097DD883CF4 /* Pods */,
+				D2568F6FB6F3757E811687FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB349A71DE968D300877B0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB349A61DE968D300877B0E /* RGTabBarController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB349A81DE968D300877B0E /* RGTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				3DB349A91DE968D300877B0E /* AppDelegate.swift */,
+				3DB349B01DE968D300877B0E /* Assets.xcassets */,
+				3DB349B51DE968D300877B0E /* Info.plist */,
+				3DB349B21DE968D300877B0E /* LaunchScreen.storyboard */,
+			);
+			path = RGTabBarController;
+			sourceTree = "<group>";
+		};
+		3DB349BB1DE96AB800877B0E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3DB349BC1DE96B0400877B0E /* RGTabBarController.swift */,
+				3DB7BB151DEA052600F73EBC /* RGTabBarController.xib */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7D12843F6D9AA097DD883CF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68EE6D33CE1B08550B6D8BA6 /* Pods-RGTabBarController.debug.xcconfig */,
+				83D709E3B3C81BC29EEDCC58 /* Pods-RGTabBarController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2568F6FB6F3757E811687FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C01666C8554DBD2858CABC4 /* Pods_RGTabBarController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB349A51DE968D300877B0E /* RGTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB349B81DE968D300877B0E /* Build configuration list for PBXNativeTarget "RGTabBarController" */;
+			buildPhases = (
+				EAAAE85E8E1507C27088117D /* [CP] Check Pods Manifest.lock */,
+				3DB349A21DE968D300877B0E /* Sources */,
+				3DB349A31DE968D300877B0E /* Frameworks */,
+				3DB349A41DE968D300877B0E /* Resources */,
+				F814F112D870E3609992EE66 /* [CP] Embed Pods Frameworks */,
+				FA67446B7BCEE59351CD87CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGTabBarController;
+			productName = RGTabBarController;
+			productReference = 3DB349A61DE968D300877B0E /* RGTabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB3499E1DE968D300877B0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ritesh Gupta";
+				TargetAttributes = {
+					3DB349A51DE968D300877B0E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BJ3YZVZBJF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DB349A11DE968D300877B0E /* Build configuration list for PBXProject "RGTabBarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB3499D1DE968D300877B0E;
+			productRefGroup = 3DB349A71DE968D300877B0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB349A51DE968D300877B0E /* RGTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB349A41DE968D300877B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB349B41DE968D300877B0E /* LaunchScreen.storyboard in Resources */,
+				3DB349B11DE968D300877B0E /* Assets.xcassets in Resources */,
+				3DB7BB161DEA052600F73EBC /* RGTabBarController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EAAAE85E8E1507C27088117D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F814F112D870E3609992EE66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGTabBarController/Pods-RGTabBarController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA67446B7BCEE59351CD87CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGTabBarController/Pods-RGTabBarController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB349A21DE968D300877B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB349AA1DE968D300877B0E /* AppDelegate.swift in Sources */,
+				3DB349BD1DE96B0400877B0E /* RGTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DB349B21DE968D300877B0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB349B31DE968D300877B0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB349B61DE968D300877B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DB349B71DE968D300877B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DB349B91DE968D300877B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EE6D33CE1B08550B6D8BA6 /* Pods-RGTabBarController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BJ3YZVZBJF;
+				INFOPLIST_FILE = RGTabBarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ritesh.RGTabBarController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3DB349BA1DE968D300877B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83D709E3B3C81BC29EEDCC58 /* Pods-RGTabBarController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BJ3YZVZBJF;
+				INFOPLIST_FILE = RGTabBarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ritesh.RGTabBarController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB349A11DE968D300877B0E /* Build configuration list for PBXProject "RGTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB349B61DE968D300877B0E /* Debug */,
+				3DB349B71DE968D300877B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB349B81DE968D300877B0E /* Build configuration list for PBXNativeTarget "RGTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB349B91DE968D300877B0E /* Debug */,
+				3DB349BA1DE968D300877B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB3499E1DE968D300877B0E /* Project object */;
+}

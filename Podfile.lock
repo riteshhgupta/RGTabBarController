@@ -1,0 +1,21 @@
+PODS:
+  - RGToolKit (1.0)
+
+DEPENDENCIES:
+  - RGToolKit (from `https://github.com/riteshhgupta/RGToolKit.git`)
+
+EXTERNAL SOURCES:
+  RGToolKit:
+    :git: https://github.com/riteshhgupta/RGToolKit.git
+
+CHECKOUT OPTIONS:
+  RGToolKit:
+    :commit: 937143ac013c4b8bcf97f9fb11fdfd64c05cd0d5
+    :git: https://github.com/riteshhgupta/RGToolKit.git
+
+SPEC CHECKSUMS:
+  RGToolKit: c8c3e007f79f51a1cdf04cd1158d4eb5cb1d9981
+
+PODFILE CHECKSUM: 2014949079f348e850baf456a0318fd70e484008
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,19 @@
+{
+  "name": "RGToolKit",
+  "version": "1.0",
+  "summary": "Its provides some useful utility functions, handlers, extensions etc which makes Swift development fun!!!",
+  "authors": {
+    "Ritesh Gupta": "rg.riteshh@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/riteshhgupta/RGToolKit",
+  "source": {
+    "git": "https://github.com/riteshhgupta/RGToolKit.git",
+    "tag": "1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Source/*.{swift}",
+  "requires_arc": true
+}
