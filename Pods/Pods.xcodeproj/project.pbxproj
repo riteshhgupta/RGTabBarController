@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0089487CFF58F09E4BD10C21A6670B9B /* RGToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91284705E598EB71B28ABA71D4E56787 /* RGToolKit-dummy.m */; };
-		015A06B074099AAE8EBCA3C785D53DBA /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7FFB73673EFEE5B610EAF7228D4F8 /* Protocols.swift */; };
-		1AD0E1EDEC7F2947C72715BD65F77D1D /* UIControl+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F32E8D4E67BC67267C653B9108A77E /* UIControl+Helper.swift */; };
-		256CC1A74A6965A44A7A47AC0FAFD825 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF9C0CFE75409CC588BAA151C8CA96 /* UIViewController+Extension.swift */; };
-		2B1B6676E4B6A80C942AACFAD4FB027D /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC00170ACC9E6DD6B84A6EFFDE0E280 /* UIButton+Extension.swift */; };
+		19A6E5F0254EF9DA1CBAA3E7A824548F /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF56C9D5960B7964EFD2D57BE32572A /* UICollectionView+Extension.swift */; };
+		1F5B6D402075084A1758784552F110E6 /* NSObjectProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16311DBD5519D682CC564563BBDA5F6 /* NSObjectProtocol+Extension.swift */; };
+		4BEF36CD59FEF1680180FE330030BB85 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D733006A6836F6FBD32CD7179923B5 /* UIViewController+Extension.swift */; };
 		4CC98FF8A3A68D1F4CBC7202C5DAA33B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		5AA35DABDCFED34D176CB53A8A1BF5B4 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BBD2AA48B23B376B5AEF394F3A425 /* UIAlertController+Extension.swift */; };
-		71D514824D119226D0D57B3AA0C303B4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93377504ADB2A8724FB72078069D0565 /* UIView+Extension.swift */; };
-		7C99B7971E126D41F14DAC1797E52C14 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B2B69D2C630506E598ABD0FEE816A /* Extension.swift */; };
+		5755D9688E08E8B48A908C7A0219011F /* UIControl+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07795CCE4063EFEC4C0A413DED95443F /* UIControl+Helper.swift */; };
+		84428FD593CE0628908A991D9B1BB306 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DAF62C5D25A0B700626F23E40B833B /* Protocols.swift */; };
 		910F249C0FE9FCC60303A53A082CEBA3 /* Pods-RGTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA2EB5EE89A135921BA8D706FC7601 /* Pods-RGTabBarController-dummy.m */; };
 		AC0FF04765C59319C1590A0873F81F83 /* Pods-RGTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE20A336336FF88A3E20BD19811C5AB6 /* Pods-RGTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF211F9F270754B5DC95CCD03216BC26 /* RGToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F0B82A2CC5BD57BE98E9968287E2E65 /* RGToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D985758EEA56EA4B2AFD548C7C62FEA3 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42472BDB072F73B0C5ADA1E8B93DE36D /* ContainerView.swift */; };
-		DC0C962D71DC6F8EA1735067A1192E04 /* AnyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80247AFFC1CDB99AD029021C21DBC628 /* AnyType.swift */; };
+		BD938DFF18330630DCFD54A8DA569AED /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991974B2C66869EFC271B62B4D6B3CB1 /* UIView+Extension.swift */; };
+		C3A70C23053A2112B64FEB50A07335C8 /* RGToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B4A9E6D49D5DFA93C4C5C56A6F2093 /* RGToolKit-dummy.m */; };
+		C68681846FC9C15056EDB22D3D2C6C06 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B2D40A93AC9E8645575BDCDA781B8E /* Extension.swift */; };
+		CF211F9F270754B5DC95CCD03216BC26 /* RGToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438DEDAA6E32577A182DD5293D2C75A /* RGToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA4919D959A811CD5D22587277518572 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F586D8F1270C9E8BDD75CA22619C5E /* UIAlertController+Extension.swift */; };
+		DA8F056F45F19C625254C734490F06D7 /* AnyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A82D625356BD5A0E86D5202C3261E /* AnyType.swift */; };
 		E618CECE983E48C29A17DC12B4243A04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F56DBEFBEA0F8513E8135405AD6C22B7 /* UIBarButtonItem+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22FC8433B8C693CA4B9D750D239530 /* UIBarButtonItem+Helper.swift */; };
+		F1CF23012BA8E76E3BD50A9FD985C80D /* UIBarButtonItem+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F7EB647C19739AD7D259A2DCD72C8 /* UIBarButtonItem+Helper.swift */; };
+		F2D832D38D6CCD579C8A97A6F36800D5 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59BAC20B0EA90CC3BE72BFA2BD2118 /* ContainerView.swift */; };
+		FB689882BE5FDF522DCFA739A14F3F25 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC521423815015C349ED96982318C1E /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,36 +38,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02E8357061C847F377EBF83ECD8E4AB3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0438DEDAA6E32577A182DD5293D2C75A /* RGToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGToolKit-umbrella.h"; sourceTree = "<group>"; };
+		07795CCE4063EFEC4C0A413DED95443F /* UIControl+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Helper.swift"; path = "Source/UIControl+Helper.swift"; sourceTree = "<group>"; };
 		0ADA2EB5EE89A135921BA8D706FC7601 /* Pods-RGTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RGTabBarController-dummy.m"; sourceTree = "<group>"; };
 		0CA2C8A036AD2DF5B17B6346B4033C5C /* Pods_RGTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RGTabBarController.framework; path = "Pods-RGTabBarController.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F3B2B69D2C630506E598ABD0FEE816A /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Source/Extension.swift; sourceTree = "<group>"; };
-		19F32E8D4E67BC67267C653B9108A77E /* UIControl+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Helper.swift"; path = "Source/UIControl+Helper.swift"; sourceTree = "<group>"; };
-		271EA84D03BC98FFAA0DE5CEE63906E6 /* RGToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RGToolKit.modulemap; sourceTree = "<group>"; };
+		1E2F7EB647C19739AD7D259A2DCD72C8 /* UIBarButtonItem+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Helper.swift"; path = "Source/UIBarButtonItem+Helper.swift"; sourceTree = "<group>"; };
+		2EC521423815015C349ED96982318C1E /* UIButton+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "Source/UIButton+Extension.swift"; sourceTree = "<group>"; };
 		31665ED847A18D9C3ADFFA2331062ADD /* Pods-RGTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGTabBarController.release.xcconfig"; sourceTree = "<group>"; };
 		3462B040D4C87DCA56617044AC958301 /* Pods-RGTabBarController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RGTabBarController-acknowledgements.plist"; sourceTree = "<group>"; };
-		42472BDB072F73B0C5ADA1E8B93DE36D /* ContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = Source/ContainerView.swift; sourceTree = "<group>"; };
-		5242255F7F2F36EED33969C001C8A849 /* RGToolKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RGToolKit.xcconfig; sourceTree = "<group>"; };
+		3982BECCAE4C7F6249606F443B4E5CD4 /* RGToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RGToolKit.modulemap; sourceTree = "<group>"; };
+		4DF56C9D5960B7964EFD2D57BE32572A /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Extension.swift"; path = "Source/UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		6B259A0B7FCD6087F6543F08F9670617 /* RGToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RGToolKit.framework; path = RGToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0A82D625356BD5A0E86D5202C3261E /* AnyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyType.swift; path = Source/AnyType.swift; sourceTree = "<group>"; };
+		6D9C3A32C755E4D5B3066CB61F63EBE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		713B885121B90AA69E49287839309BDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77E7FFB73673EFEE5B610EAF7228D4F8 /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Protocols.swift; sourceTree = "<group>"; };
-		80247AFFC1CDB99AD029021C21DBC628 /* AnyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyType.swift; path = Source/AnyType.swift; sourceTree = "<group>"; };
-		91284705E598EB71B28ABA71D4E56787 /* RGToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RGToolKit-dummy.m"; sourceTree = "<group>"; };
-		93377504ADB2A8724FB72078069D0565 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Source/UIView+Extension.swift"; sourceTree = "<group>"; };
+		81B2D40A93AC9E8645575BDCDA781B8E /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Source/Extension.swift; sourceTree = "<group>"; };
+		901DC7A3761328406A531696C32D6C32 /* RGToolKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RGToolKit.xcconfig; sourceTree = "<group>"; };
+		91D733006A6836F6FBD32CD7179923B5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "Source/UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		987A79C20A56873106B2D8A1EDA7C761 /* Pods-RGTabBarController-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGTabBarController-frameworks.sh"; sourceTree = "<group>"; };
-		9F0B82A2CC5BD57BE98E9968287E2E65 /* RGToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGToolKit-umbrella.h"; sourceTree = "<group>"; };
+		991974B2C66869EFC271B62B4D6B3CB1 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Source/UIView+Extension.swift"; sourceTree = "<group>"; };
+		A0F586D8F1270C9E8BDD75CA22619C5E /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Extension.swift"; path = "Source/UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		A171503987C6D09DEBFF20AEF66BE509 /* Pods-RGTabBarController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGTabBarController-resources.sh"; sourceTree = "<group>"; };
-		A8BF9C0CFE75409CC588BAA151C8CA96 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "Source/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A6DAF62C5D25A0B700626F23E40B833B /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Protocols.swift; sourceTree = "<group>"; };
 		A9CD810285FEFBB0CD20DAA01074AAB5 /* Pods-RGTabBarController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RGTabBarController-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AB8A5F80E11CC0CAF5732CE39DE8DF8B /* Pods-RGTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
 		ACE13F525174091AA42ADD47033B7ABB /* Pods-RGTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RGTabBarController.modulemap"; sourceTree = "<group>"; };
-		B04BBD2AA48B23B376B5AEF394F3A425 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Extension.swift"; path = "Source/UIAlertController+Extension.swift"; sourceTree = "<group>"; };
-		BDC00170ACC9E6DD6B84A6EFFDE0E280 /* UIButton+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "Source/UIButton+Extension.swift"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E3274C7611D65B0B29D2F8CD8C874F37 /* RGToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGToolKit-prefix.pch"; sourceTree = "<group>"; };
-		EB22FC8433B8C693CA4B9D750D239530 /* UIBarButtonItem+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Helper.swift"; path = "Source/UIBarButtonItem+Helper.swift"; sourceTree = "<group>"; };
+		DE59BAC20B0EA90CC3BE72BFA2BD2118 /* ContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = Source/ContainerView.swift; sourceTree = "<group>"; };
+		E16311DBD5519D682CC564563BBDA5F6 /* NSObjectProtocol+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObjectProtocol+Extension.swift"; path = "Source/NSObjectProtocol+Extension.swift"; sourceTree = "<group>"; };
+		EBEE28B092C87154E45681A703B41003 /* RGToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGToolKit-prefix.pch"; sourceTree = "<group>"; };
 		EE20A336336FF88A3E20BD19811C5AB6 /* Pods-RGTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RGTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		F7B4A9E6D49D5DFA93C4C5C56A6F2093 /* RGToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RGToolKit-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,28 +98,6 @@
 				783830619C5F25EBE0737F7CDAAE27AF /* Pods-RGTabBarController */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2F11A67796DA7438E2849BC4E3911AFD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				02E8357061C847F377EBF83ECD8E4AB3 /* Info.plist */,
-				271EA84D03BC98FFAA0DE5CEE63906E6 /* RGToolKit.modulemap */,
-				5242255F7F2F36EED33969C001C8A849 /* RGToolKit.xcconfig */,
-				91284705E598EB71B28ABA71D4E56787 /* RGToolKit-dummy.m */,
-				E3274C7611D65B0B29D2F8CD8C874F37 /* RGToolKit-prefix.pch */,
-				9F0B82A2CC5BD57BE98E9968287E2E65 /* RGToolKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RGToolKit";
-			sourceTree = "<group>";
-		};
-		4A3FE00C4250F20B8190C781540AFC3A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE17D3C5143803147B6092F74F8A8D7A /* RGToolKit */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -149,7 +131,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4A3FE00C4250F20B8190C781540AFC3A /* Pods */,
+				EDC8F46143B14362B87BF7B30F8B8334 /* Pods */,
 				935FD36230F143D7A0B1AF6DDEAA0012 /* Products */,
 				250E0D61E03DF7B9EA12E9D58931B1B8 /* Targets Support Files */,
 			);
@@ -172,23 +154,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FE17D3C5143803147B6092F74F8A8D7A /* RGToolKit */ = {
+		C85553E669D2EBCB0CEF3608AD12D85C /* RGToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				80247AFFC1CDB99AD029021C21DBC628 /* AnyType.swift */,
-				42472BDB072F73B0C5ADA1E8B93DE36D /* ContainerView.swift */,
-				0F3B2B69D2C630506E598ABD0FEE816A /* Extension.swift */,
-				77E7FFB73673EFEE5B610EAF7228D4F8 /* Protocols.swift */,
-				B04BBD2AA48B23B376B5AEF394F3A425 /* UIAlertController+Extension.swift */,
-				EB22FC8433B8C693CA4B9D750D239530 /* UIBarButtonItem+Helper.swift */,
-				BDC00170ACC9E6DD6B84A6EFFDE0E280 /* UIButton+Extension.swift */,
-				19F32E8D4E67BC67267C653B9108A77E /* UIControl+Helper.swift */,
-				93377504ADB2A8724FB72078069D0565 /* UIView+Extension.swift */,
-				A8BF9C0CFE75409CC588BAA151C8CA96 /* UIViewController+Extension.swift */,
-				2F11A67796DA7438E2849BC4E3911AFD /* Support Files */,
+				6D0A82D625356BD5A0E86D5202C3261E /* AnyType.swift */,
+				DE59BAC20B0EA90CC3BE72BFA2BD2118 /* ContainerView.swift */,
+				81B2D40A93AC9E8645575BDCDA781B8E /* Extension.swift */,
+				E16311DBD5519D682CC564563BBDA5F6 /* NSObjectProtocol+Extension.swift */,
+				A6DAF62C5D25A0B700626F23E40B833B /* Protocols.swift */,
+				A0F586D8F1270C9E8BDD75CA22619C5E /* UIAlertController+Extension.swift */,
+				1E2F7EB647C19739AD7D259A2DCD72C8 /* UIBarButtonItem+Helper.swift */,
+				2EC521423815015C349ED96982318C1E /* UIButton+Extension.swift */,
+				4DF56C9D5960B7964EFD2D57BE32572A /* UICollectionView+Extension.swift */,
+				07795CCE4063EFEC4C0A413DED95443F /* UIControl+Helper.swift */,
+				991974B2C66869EFC271B62B4D6B3CB1 /* UIView+Extension.swift */,
+				91D733006A6836F6FBD32CD7179923B5 /* UIViewController+Extension.swift */,
+				F3D2D06B78B1F2A0633F602774A7B715 /* Support Files */,
 			);
 			name = RGToolKit;
 			path = RGToolKit;
+			sourceTree = "<group>";
+		};
+		EDC8F46143B14362B87BF7B30F8B8334 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C85553E669D2EBCB0CEF3608AD12D85C /* RGToolKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3D2D06B78B1F2A0633F602774A7B715 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D9C3A32C755E4D5B3066CB61F63EBE6 /* Info.plist */,
+				3982BECCAE4C7F6249606F443B4E5CD4 /* RGToolKit.modulemap */,
+				901DC7A3761328406A531696C32D6C32 /* RGToolKit.xcconfig */,
+				F7B4A9E6D49D5DFA93C4C5C56A6F2093 /* RGToolKit-dummy.m */,
+				EBEE28B092C87154E45681A703B41003 /* RGToolKit-prefix.pch */,
+				0438DEDAA6E32577A182DD5293D2C75A /* RGToolKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RGToolKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 137AB755F50D394E8B9E2EBBED517539 /* Build configuration list for PBXNativeTarget "RGToolKit" */;
 			buildPhases = (
-				6815921380C838091838F5BD209FF920 /* Sources */,
+				8FD2EEF251947E894B69077B27F22423 /* Sources */,
 				6539D9A2D554BA30295FB293AD7E745B /* Frameworks */,
 				070128EC66EFAC398AEC8ED5737D4258 /* Headers */,
 			);
@@ -276,29 +282,31 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6815921380C838091838F5BD209FF920 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC0C962D71DC6F8EA1735067A1192E04 /* AnyType.swift in Sources */,
-				D985758EEA56EA4B2AFD548C7C62FEA3 /* ContainerView.swift in Sources */,
-				7C99B7971E126D41F14DAC1797E52C14 /* Extension.swift in Sources */,
-				015A06B074099AAE8EBCA3C785D53DBA /* Protocols.swift in Sources */,
-				0089487CFF58F09E4BD10C21A6670B9B /* RGToolKit-dummy.m in Sources */,
-				5AA35DABDCFED34D176CB53A8A1BF5B4 /* UIAlertController+Extension.swift in Sources */,
-				F56DBEFBEA0F8513E8135405AD6C22B7 /* UIBarButtonItem+Helper.swift in Sources */,
-				2B1B6676E4B6A80C942AACFAD4FB027D /* UIButton+Extension.swift in Sources */,
-				1AD0E1EDEC7F2947C72715BD65F77D1D /* UIControl+Helper.swift in Sources */,
-				71D514824D119226D0D57B3AA0C303B4 /* UIView+Extension.swift in Sources */,
-				256CC1A74A6965A44A7A47AC0FAFD825 /* UIViewController+Extension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		81FA1751B2DC86294AD3530FEE3DB4EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				910F249C0FE9FCC60303A53A082CEBA3 /* Pods-RGTabBarController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD2EEF251947E894B69077B27F22423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8F056F45F19C625254C734490F06D7 /* AnyType.swift in Sources */,
+				F2D832D38D6CCD579C8A97A6F36800D5 /* ContainerView.swift in Sources */,
+				C68681846FC9C15056EDB22D3D2C6C06 /* Extension.swift in Sources */,
+				1F5B6D402075084A1758784552F110E6 /* NSObjectProtocol+Extension.swift in Sources */,
+				84428FD593CE0628908A991D9B1BB306 /* Protocols.swift in Sources */,
+				C3A70C23053A2112B64FEB50A07335C8 /* RGToolKit-dummy.m in Sources */,
+				DA4919D959A811CD5D22587277518572 /* UIAlertController+Extension.swift in Sources */,
+				F1CF23012BA8E76E3BD50A9FD985C80D /* UIBarButtonItem+Helper.swift in Sources */,
+				FB689882BE5FDF522DCFA739A14F3F25 /* UIButton+Extension.swift in Sources */,
+				19A6E5F0254EF9DA1CBAA3E7A824548F /* UICollectionView+Extension.swift in Sources */,
+				5755D9688E08E8B48A908C7A0219011F /* UIControl+Helper.swift in Sources */,
+				BD938DFF18330630DCFD54A8DA569AED /* UIView+Extension.swift in Sources */,
+				4BEF36CD59FEF1680180FE330030BB85 /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +359,7 @@
 		};
 		2BFEE807A1C173E8EFDF8CF74678C85D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5242255F7F2F36EED33969C001C8A849 /* RGToolKit.xcconfig */;
+			baseConfigurationReference = 901DC7A3761328406A531696C32D6C32 /* RGToolKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -384,7 +392,7 @@
 		};
 		A6F0A65C6DED66EBB057DCBA98EDA8C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5242255F7F2F36EED33969C001C8A849 /* RGToolKit.xcconfig */;
+			baseConfigurationReference = 901DC7A3761328406A531696C32D6C32 /* RGToolKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

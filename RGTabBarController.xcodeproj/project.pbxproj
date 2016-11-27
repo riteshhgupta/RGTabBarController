@@ -16,6 +16,8 @@
 		3DB7BB1E1DEAEEF400F73EBC /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7BB1C1DEAEEF400F73EBC /* TestViewController.xib */; };
 		3DB7BB211DEAF2B400F73EBC /* RGPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7BB1F1DEAF2B400F73EBC /* RGPageController.swift */; };
 		3DB7BB221DEAF2B400F73EBC /* RGPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7BB201DEAF2B400F73EBC /* RGPageController.xib */; };
+		3DB7BB271DEB309600F73EBC /* RGTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7BB251DEB309600F73EBC /* RGTabBarCell.swift */; };
+		3DB7BB281DEB309600F73EBC /* RGTabBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7BB261DEB309600F73EBC /* RGTabBarCell.xib */; };
 		68D945956EF2084E037EA0C8 /* Pods_RGTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01666C8554DBD2858CABC4 /* Pods_RGTabBarController.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		3DB7BB1C1DEAEEF400F73EBC /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		3DB7BB1F1DEAF2B400F73EBC /* RGPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGPageController.swift; sourceTree = "<group>"; };
 		3DB7BB201DEAF2B400F73EBC /* RGPageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGPageController.xib; sourceTree = "<group>"; };
+		3DB7BB251DEB309600F73EBC /* RGTabBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGTabBarCell.swift; sourceTree = "<group>"; };
+		3DB7BB261DEB309600F73EBC /* RGTabBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGTabBarCell.xib; sourceTree = "<group>"; };
 		4C01666C8554DBD2858CABC4 /* Pods_RGTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EE6D33CE1B08550B6D8BA6 /* Pods-RGTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTabBarController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGTabBarController/Pods-RGTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
 		83D709E3B3C81BC29EEDCC58 /* Pods-RGTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTabBarController.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGTabBarController/Pods-RGTabBarController.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			children = (
 				3DB349BC1DE96B0400877B0E /* RGTabBarController.swift */,
 				3DB7BB151DEA052600F73EBC /* RGTabBarController.xib */,
+				3DB7BB251DEB309600F73EBC /* RGTabBarCell.swift */,
+				3DB7BB261DEB309600F73EBC /* RGTabBarCell.xib */,
 				3DB7BB1F1DEAF2B400F73EBC /* RGPageController.swift */,
 				3DB7BB201DEAF2B400F73EBC /* RGPageController.xib */,
 			);
@@ -171,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB7BB281DEB309600F73EBC /* RGTabBarCell.xib in Resources */,
 				3DB349B41DE968D300877B0E /* LaunchScreen.storyboard in Resources */,
 				3DB349B11DE968D300877B0E /* Assets.xcassets in Resources */,
 				3DB7BB1E1DEAEEF400F73EBC /* TestViewController.xib in Resources */,
@@ -234,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB7BB271DEB309600F73EBC /* RGTabBarCell.swift in Sources */,
 				3DB349AA1DE968D300877B0E /* AppDelegate.swift in Sources */,
 				3DB7BB1D1DEAEEF400F73EBC /* TestViewController.swift in Sources */,
 				3DB349BD1DE96B0400877B0E /* RGTabBarController.swift in Sources */,

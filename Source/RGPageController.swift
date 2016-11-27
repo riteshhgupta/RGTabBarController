@@ -9,31 +9,45 @@
 import UIKit
 import RGToolKit
 
-typealias IndexClosure = (Int) -> Void
+typealias Closure<T> = (T) -> Void
 
 class RGPageController: UIPageViewController {
 	
-	let items: [RGTabBarItem]
+	let controllers: [UIViewController]
 	var scrollView: UIScrollView?
-	var currentIndex: Int = 0 {
+	var currentPage: Int = 0 {
 		didSet {
-			didChangePage?(currentIndex)
+			didChangePage?(currentPage)
 		}
 	}
 	var potentialNextIndex: Int = 0
 	
-	var didChangePage: IndexClosure?
+	var didChangePage: Closure<Int>?
+	var didChangePageContentOffset: Closure<CGFloat>?
+	var previousContentOffset: CGFloat = 375.0
+	var shouldObserveForContentOffsetChange = true
 	
-	init(items: [RGTabBarItem]) {
-		self.items = items
+	init(controllers: [UIViewController]) {
+		self.controllers = controllers
 		super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
-		guard !items.isEmpty else { return }
+		guard !controllers.isEmpty else { return }
 		
 		delegate = self
 		dataSource = self
 		
 		setViewControllers(
-			[items[0].controller],
+			[controllers[0]],
+			direction: .forward,
+			animated: true,
+			completion: nil
+		)
+	}
+	
+	func move(toPage page: Int) {
+		shouldObserveForContentOffsetChange = false
+		currentPage = page
+		setViewControllers(
+			[controllers[page]],
 			direction: .forward,
 			animated: true,
 			completion: nil
@@ -58,6 +72,22 @@ class RGPageController: UIPageViewController {
 extension RGPageController: UIScrollViewDelegate {
 	
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		let currentOffset = scrollView.contentOffset.x
+		let delta = (currentOffset - previousContentOffset)/CGFloat(controllers.count)
+		previousContentOffset = currentOffset
+
+		if shouldObserveForContentOffsetChange {
+			didChangePageContentOffset?(delta)
+			print("scroll")
+		}
+	}
+	
+	func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+		shouldObserveForContentOffsetChange = true
+	}
+	
+	func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+		shouldObserveForContentOffsetChange = true
 	}
 }
 
@@ -67,24 +97,26 @@ extension RGPageController: UIPageViewControllerDelegate {
 	}
 	
 	func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-		currentIndex += pageViewController.indexFactor
+		currentPage += pageViewController.pageFactor
+		shouldObserveForContentOffsetChange = false
+		print("done")
 	}
 }
 
 extension RGPageController: UIPageViewControllerDataSource {
 	
 	func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-		return items.map { $0.controller }.after(viewController)
+		return controllers.after(viewController)
 	}
 	
 	func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-		return items.map { $0.controller }.before(viewController)
+		return controllers.before(viewController)
 	}
 }
 
 extension UIPageViewController {
 	
-	var indexFactor: Int {
+	var pageFactor: Int {
 		let sv = view.subviews.filter { $0 is UIScrollView }.first as? UIScrollView
 		guard let scrollView = sv else { return 0 }
 		if scrollView.contentOffset.x == 0 { return -1 }

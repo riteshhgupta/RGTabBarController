@@ -26,14 +26,48 @@ class RGTabBarController: UIViewController {
 		}
 	}
 	
+	@IBOutlet var collectionView: UICollectionView! {
+		didSet {
+			collectionView.delegate = self
+			collectionView.dataSource = self
+			collectionView.register(
+				RGTabBarCell.nib,
+				forCellWithReuseIdentifier: RGTabBarCell.className
+			)
+		}
+	}
+	
+	@IBOutlet var sliderWidthConstraint: NSLayoutConstraint! {
+		didSet {
+			let width = UIScreen.main.bounds.width
+			sliderWidthConstraint.constant = width/CGFloat(items.count)
+		}
+	}
+	@IBOutlet var sliderLeftConstraint: NSLayoutConstraint!
+	
 	let pageController: RGPageController
 	
+	let items: [RGTabBarItem]
+	
+	var shouldMoveSlider = true
+	
 	init(items: [RGTabBarItem]) {
-		pageController = RGPageController(items: items)
+		self.items = items
+		self.pageController = RGPageController(controllers: items.map { $0.controller })
 		super.init(nibName: nil, bundle: nil)
 		
-		pageController.didChangePage = { index in
-			print(index)
+		pageController.didChangePage = { page in
+		}
+		
+		pageController.didChangePageContentOffset = { pageFactor in
+			var newValue = self.sliderLeftConstraint.constant
+			newValue += pageFactor
+			if self.shouldMoveSlider {
+				self.sliderLeftConstraint.constant = newValue
+				self.view.layoutIfNeeded()
+			} else {
+				self.shouldMoveSlider = true
+			}
 		}
 	}
 	
@@ -43,5 +77,51 @@ class RGTabBarController: UIViewController {
 	
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
+	}
+	
+	func animateSlider(toValue value: CGFloat) {
+		sliderLeftConstraint.constant = value
+		UIView.animate(withDuration: 0.25, animations: {
+			self.view.layoutIfNeeded()
+		})
+	}
+	
+	func moveSlider(toPage page: Int) {
+		let newValue = CGFloat(page)*sliderWidthConstraint.constant
+		animateSlider(toValue: newValue)
+	}
+}
+
+extension RGTabBarController: UICollectionViewDelegateFlowLayout {
+	
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+		let cellWidth = UIScreen.main.bounds.width/CGFloat(items.count)
+		let cellHeight = collectionView.frame.height
+		return CGSize(width: cellWidth, height: cellHeight)
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let page = indexPath.row
+		pageController.move(toPage: page)
+		moveSlider(toPage: page)
+		shouldMoveSlider = false
+	}
+}
+
+extension RGTabBarController: UICollectionViewDataSource {
+	
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return items.count
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell: RGTabBarCell = collectionView.dequeueReusableGenericCell(
+			withReuseIdentifier: RGTabBarCell.className,
+			for: indexPath
+		)
+		cell.configure(
+			withModel: RGTabBarCellModel(title: items[indexPath.row].title)
+		)
+		return cell
 	}
 }
