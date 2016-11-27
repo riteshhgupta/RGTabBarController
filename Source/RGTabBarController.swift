@@ -31,6 +31,10 @@ class RGTabBarController: UIViewController {
 	init(items: [RGTabBarItem]) {
 		pageController = RGPageController(items: items)
 		super.init(nibName: nil, bundle: nil)
+		
+		pageController.didChangePage = { index in
+			print(index)
+		}
 	}
 	
 	override func viewDidLoad() {
