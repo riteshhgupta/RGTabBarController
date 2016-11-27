@@ -13,10 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
+	struct Item: RGTabBarItem {
+		var title: String
+		var controller: UIViewController
+		let present: Bool = false
+	}
+	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
 		
-		window?.rootViewController = RGTabBarController()
+		let items = (0...4)
+			.map { "\($0)" }
+			.map { Item(title: $0, controller: TestViewController(title: $0)) }
+		
+		window?.rootViewController = RGTabBarController(items: items)
 		window?.makeKeyAndVisible()
 		return true
 	}

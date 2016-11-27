@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RGToolKit:
-    :commit: 937143ac013c4b8bcf97f9fb11fdfd64c05cd0d5
+    :commit: 241220faa88503e11c26cd694bac35ad8bcc64bd
     :git: https://github.com/riteshhgupta/RGToolKit.git
 
 SPEC CHECKSUMS:

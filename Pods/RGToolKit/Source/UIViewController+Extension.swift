@@ -11,27 +11,27 @@ import UIKit
 
 // functionality related to navigation buttons
 
-extension UIViewController {
+public extension UIViewController {
 	
-	func addRightNavbarItems(_ barButtonItems: [UIBarButtonItem]) {
+	public func addRightNavbarItems(_ barButtonItems: [UIBarButtonItem]) {
 		navigationItem.rightBarButtonItems = barButtonItems
 	}
-	func addLeftNavbarItems(_ barButtonItems: [UIBarButtonItem]) {
+	public func addLeftNavbarItems(_ barButtonItems: [UIBarButtonItem]) {
 		navigationItem.leftBarButtonItems = barButtonItems
 	}
-	func addRightNavbarItem(_ barButtonItem: UIBarButtonItem) {
+	public func addRightNavbarItem(_ barButtonItem: UIBarButtonItem) {
 		addRightNavbarItems([barButtonItem])
 	}
-	func addLeftNavbarItem(_ barButtonItem: UIBarButtonItem) {
+	public func addLeftNavbarItem(_ barButtonItem: UIBarButtonItem) {
 		addLeftNavbarItems([barButtonItem])
 	}
 }
 
 // functionality related to Container View
 
-extension UIViewController {
+public extension UIViewController {
 	
-	func add(childVC: UIViewController, embedInContainerView containerView: ContainerView) {
+	public func add(childVC: UIViewController, embedInContainerView containerView: ContainerView) {
 		containerView.contentView = childVC.view
 		
 		childVC.willMove(toParentViewController: self)
