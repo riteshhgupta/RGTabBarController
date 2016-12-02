@@ -28,7 +28,7 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-b4-sUi" userLabel="Navbar">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="64" id="xET-Ax-Oxa"/>
                             </constraints>
@@ -38,7 +38,7 @@
                             <subviews>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q94-dm-Qth">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="rmD-6y-g48">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -47,7 +47,7 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                             </subviews>
-                            <color key="backgroundColor" red="0.29411764709999999" green="0.82745098039999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="Q94-dm-Qth" secondAttribute="bottom" id="Pc2-g2-1nP"/>
                                 <constraint firstAttribute="trailing" secondItem="Q94-dm-Qth" secondAttribute="trailing" id="ZoG-Sy-jA9"/>
@@ -56,15 +56,15 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32g-77-oxe" userLabel="Slider">
-                            <rect key="frame" x="0.0" y="126" width="128" height="2"/>
+                            <rect key="frame" x="0.0" y="124" width="128" height="4"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="2" id="ODA-F6-DbY"/>
+                                <constraint firstAttribute="height" constant="4" id="ODA-F6-DbY"/>
                                 <constraint firstAttribute="width" constant="128" id="cC7-yY-TP8"/>
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="32g-77-oxe" secondAttribute="bottom" id="5W7-sS-PBS"/>
                         <constraint firstItem="h4N-b4-sUi" firstAttribute="top" secondItem="MkS-Du-LVH" secondAttribute="top" id="6gu-Ok-7hm"/>

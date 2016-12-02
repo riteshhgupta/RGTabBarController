@@ -57,6 +57,7 @@ class RGTabBarController: UIViewController {
 		super.init(nibName: nil, bundle: nil)
 		
 		pageController.didChangePage = { page in
+			self.moveSlider(toPage: page)
 		}
 		
 		pageController.didChangePageContentOffset = { pageFactor in
@@ -103,7 +104,6 @@ extension RGTabBarController: UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		let page = indexPath.row
 		pageController.move(toPage: page)
-		moveSlider(toPage: page)
 		shouldMoveSlider = false
 	}
 }

@@ -44,11 +44,13 @@ class RGPageController: UIPageViewController {
 	}
 	
 	func move(toPage page: Int) {
+		guard currentPage != page else { return }
+		let direction: UIPageViewControllerNavigationDirection = (page > currentPage) ? .forward : .reverse
 		shouldObserveForContentOffsetChange = false
 		currentPage = page
 		setViewControllers(
 			[controllers[page]],
-			direction: .forward,
+			direction: direction,
 			animated: true,
 			completion: nil
 		)
@@ -78,7 +80,6 @@ extension RGPageController: UIScrollViewDelegate {
 
 		if shouldObserveForContentOffsetChange {
 			didChangePageContentOffset?(delta)
-			print("scroll")
 		}
 	}
 	
@@ -99,7 +100,6 @@ extension RGPageController: UIPageViewControllerDelegate {
 	func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
 		currentPage += pageViewController.pageFactor
 		shouldObserveForContentOffsetChange = false
-		print("done")
 	}
 }
 
@@ -119,8 +119,8 @@ extension UIPageViewController {
 	var pageFactor: Int {
 		let sv = view.subviews.filter { $0 is UIScrollView }.first as? UIScrollView
 		guard let scrollView = sv else { return 0 }
-		if scrollView.contentOffset.x == 0 { return -1 }
-		else if scrollView.contentOffset.x == 750 { return 1 }
+		if scrollView.contentOffset.x < 375.0 { return -1 }
+		else if scrollView.contentOffset.x > 375.0 { return 1 }
 		return 0
 	}
 }
