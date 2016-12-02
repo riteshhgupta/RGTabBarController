@@ -43,33 +43,24 @@ class RGTabBarController: UIViewController {
 			sliderWidthConstraint.constant = width/CGFloat(items.count)
 		}
 	}
+	
 	@IBOutlet var sliderLeftConstraint: NSLayoutConstraint!
 	
 	let pageController: RGPageController
 	
 	let items: [RGTabBarItem]
 	
-	var shouldMoveSlider = true
+	var shouldMoveSliderProgrammatically = true
 	
 	init(items: [RGTabBarItem]) {
 		self.items = items
-		self.pageController = RGPageController(controllers: items.map { $0.controller })
+		self.pageController = RGPageController(
+			controllers: items.map { $0.controller }
+		)
 		super.init(nibName: nil, bundle: nil)
 		
-		pageController.didChangePage = { page in
-			self.moveSlider(toPage: page)
-		}
-		
-		pageController.didChangePageContentOffset = { pageFactor in
-			var newValue = self.sliderLeftConstraint.constant
-			newValue += pageFactor
-			if self.shouldMoveSlider {
-				self.sliderLeftConstraint.constant = newValue
-				self.view.layoutIfNeeded()
-			} else {
-				self.shouldMoveSlider = true
-			}
-		}
+		pageController.didChangePage = didChangePageObserver
+		pageController.didChangePageContentOffset = didChangePageContentOffsetObserver
 	}
 	
 	override func viewDidLoad() {
@@ -78,6 +69,26 @@ class RGTabBarController: UIViewController {
 	
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
+	}
+
+	var didChangePageContentOffsetObserver: Closure<CGFloat>? {
+		return { pageFactor in
+			var newValue = self.sliderLeftConstraint.constant
+			newValue += pageFactor
+			if self.shouldMoveSliderProgrammatically {
+				print(newValue)
+				self.sliderLeftConstraint.constant = newValue
+				self.view.layoutIfNeeded()
+			} else {
+				self.shouldMoveSliderProgrammatically = true
+			}
+		}
+	}
+	
+	var didChangePageObserver: Closure<Int>? {
+		return { page in
+			self.moveSlider(toPage: page)
+		}
 	}
 	
 	func animateSlider(toValue value: CGFloat) {
@@ -104,7 +115,7 @@ extension RGTabBarController: UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		let page = indexPath.row
 		pageController.move(toPage: page)
-		shouldMoveSlider = false
+		shouldMoveSliderProgrammatically = false
 	}
 }
 

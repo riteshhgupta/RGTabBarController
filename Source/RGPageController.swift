@@ -19,12 +19,11 @@ class RGPageController: UIPageViewController {
 			didChangePage?(currentPage)
 		}
 	}
-	
 	var didChangePage: Closure<Int>?
 	var didChangePageContentOffset: Closure<CGFloat>?
 	var previousContentOffset: CGFloat = 375.0
 	var shouldObserveForContentOffsetChange = true
-	
+
 	init(controllers: [UIViewController]) {
 		self.controllers = controllers
 		super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
@@ -65,10 +64,10 @@ extension RGPageController: UIScrollViewDelegate {
 	
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		let currentOffset = scrollView.contentOffset.x
+		let delta = (currentOffset - previousContentOffset)/CGFloat(controllers.count)
 		previousContentOffset = currentOffset
 		
 		if shouldObserveForContentOffsetChange {
-			let delta = (currentOffset - previousContentOffset)/CGFloat(controllers.count)
 			didChangePageContentOffset?(delta)
 		}
 	}
